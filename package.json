@@ -4,7 +4,7 @@
         "fable": ">=0.3.22"
     },
     "dependencies": {
-        "fable-core": "latest"
+        "fable-core": "0.1.8"
     },
     "devDependencies": {
         "mocha": "latest",
