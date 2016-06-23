@@ -1,0 +1,16 @@
+{
+    "private": true,
+    "engines": {
+        "fable": ">=0.3.22"
+    },
+    "dependencies": {
+        "fable-core": "latest"
+    },
+    "devDependencies": {
+        "mocha": "latest",
+        "fable-plugins-nunit": "^0.0.3"
+    },
+    "scripts": {
+        "test": "mocha --recursive out"
+    }
+}
