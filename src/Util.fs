@@ -3,6 +3,7 @@ module MathJS.Util
 open System
 open Fable.Core
 
+
 type Result<'TSuccess, 'TError> = 
     | Success of 'TSuccess 
     | Error of 'TError list
@@ -28,7 +29,6 @@ type Result<'TSuccess, 'TError> =
                     | Success(really) -> Success(really)
                     | Error(e) -> Error(e)
             | Error(e) -> Error e
-
 
 let fromOption<'T> (defaultVal:'T) (o: 'T option) : 'T = if o.IsSome then o.Value else defaultVal
 
@@ -57,3 +57,4 @@ let inline join (t:^T) : ^U = (^T : (member join : ^T -> ^U) (t,t))
 
 let inline show< ^T when ^T : (member show : unit -> String)> (x:^T) : string =
     (^T : (member show : unit -> string) (x))
+    
